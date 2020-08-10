@@ -1,0 +1,12 @@
+.contact{
+	font-size: 18px;
+    color: red;
+    border-bottom: 4px solid red;
+}
+#contact{
+	margin-top: 5px;
+}
+#fcontact{
+	color: red;
+	border-bottom: 4px solid red;
+}

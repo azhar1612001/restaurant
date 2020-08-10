@@ -1,0 +1,67 @@
+.about{
+	font-size: 18px;
+    color: red;
+    border-bottom: 4px solid red;
+}
+#about{
+	margin-top: 5px;
+}
+#fabout{
+	color: red;
+	border-bottom: 4px solid red;
+}
+.abtimg{
+	height: 350px;
+	width: 100%;
+}
+.cont{
+  position: relative;
+  text-align: center;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: white;
+  background: radial-gradient(black, transparent);
+  text-shadow: 1px 0 10px beige;
+  font-weight: bolder;
+  font-family: 'Poppins',sans-serif;
+}
+.abtcon{
+	max-width: 60%;
+	float: left;
+	background: black;
+	height: 550px;
+}
+.abtcon p{
+	max-width: 100%;
+	color: white;
+	margin: 100px 20px 0 70px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.owrintro{
+	width: 50%;
+	float: left;
+	padding: 0 0 20px 100px;
+}
+.owrintro p{
+	width: 100%;
+	font-size: 19px;
+	line-height: 30px;
+}
+.owrintro h2{
+	color: red;
+	font-weight: 600;
+	font-family: 'Poppins',sans-serif;
+	margin: 0;
+}
+.owimg{
+	height: 500px;
+	width: 500px;
+	margin: 50px 0 0 100px;
+	box-shadow: 5px 5px 5px 3px black;
+}

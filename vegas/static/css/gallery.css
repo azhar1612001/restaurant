@@ -1,0 +1,12 @@
+.gallery{
+	font-size: 18px;
+    color: red;
+    border-bottom: 4px solid red;
+}
+#gallery{
+	margin-top: 5px;
+}
+#fgallery{
+	color: red;
+	border-bottom: 4px solid red;
+}

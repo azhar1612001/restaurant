@@ -1,0 +1,12 @@
+.menu{
+	font-size: 18px;
+    color: red;
+    border-bottom: 4px solid red;
+}
+#menu{
+	margin-top: 5px;
+}
+#fmenu{
+	color: red;
+	border-bottom: 4px solid red;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+  	<title>{% block title %} {% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/basic.css'%}">
+    {% block css %} {% endblock %}
+	</head>
+	<body>
+		<header>
+			<div class="logo"><img src="{%static 'images/logo.jpg'%}"></div>
+			<div class="menu-toggle"></div>
+			<nav>
+				<ul>
+					<li id="active" class="desc"><a href="/" class="home">Home</a></li>
+					<li id="about" class="desc"><a href="about" class="about">About Us</a></li>
+					<li id="menu" class="desc"><a href="menu" class="menu">Menu</a></li>
+					<li id="facility" class="desc"><a href="facility" class="facility">Banquet Facility</a></li>
+					<li id="gallery" class="desc"><a href="gallery" class="gallery">Gallery</a></li>
+					<li id="catering" class="desc"><a href="catering" class="catering">Catering</a></li>
+					<li id="contact" class="desc"><a href="contact" class="contact">Contact Us</a></li>
+					<li id="book-btn"><a href="booking" class="book-btn">Online Booking</a></li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+			<div class="res-book"></div>
+		</header>
+
+{% block body %} {% endblock %}
+
+<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
+						<h2>Hours of operation</h2>
+						<p><span style="color: red">7 DAYS OPEN</span><br>Monday To Sunday : 11AM To 10PM<br>NO LUNCH BUFFET<br>TAKEOUT AND DELIVERY ONLY</p>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
+						<h2>Useful Link</h2>
+						<ul>
+							<li><a href="/" id="fhome" class="active footer-link">Home</a></li>
+							<li><a href="about" id="fabout" class="footer-link">About Us</a></li>
+							<li><a href="menu" id="fmenu" class="footer-link fmenu">Menu</a></li>
+							<li><a href="facility" id="ffacility" class="footer-link">Banquet Facility</a></li>
+							<li><a href="gallery" id="fgallery" class="footer-link">Gallery</a></li>
+							<li><a href="catering" id="fcatering" class="footer-link">Catering</a></li>
+							<li><a href="contact" id="fcontact" class="footer-link">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
+						<h2>Contact Us</h2>
+						<p>Please Follow us on our Social Media Profile in order to keep updated.</p>
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
+						<h2>Inquiry</h2>
+						<form action="">
+							<div class="form-group">
+    							<label for="name"></label>
+    							<input type="text" class="form-control" id="name" name="name" placeholder="Name*" required>
+  							</div>
+  							<div class="form-group">
+    							<label for="email"></label>
+    							<input type="email" class="form-control" id="email" name="email" placeholder="Email*" required>
+  							</div>
+  							<div class="form-group">
+    							<label for="phone"></label>
+    							<input type="number" class="form-control" id="phone" name="phone" placeholder="Phone Number*" required>
+  							</div>
+  							<div class="form-group" style="margin-bottom: 1rem">
+    							<label for="message"></label>
+    							<textarea class="form-control" id="message" name="message" placeholder="Message*" rows="3" required></textarea>
+  							</div>
+							<input type="submit" value="Send Inquiry">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom-text">&copy;2020 Copyright: All Rights Reserved | Designed and Developed by <span style="color: red">Vegas Restaurant</span></div>
+	</footer>
+
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="{%static 'javascript/basic.js'%}"></script>
+		{% block js %} {% endblock %}
+   </body>
+</html>
